@@ -6,8 +6,8 @@ const dev = process.argv.includes('dev');
 export default {
   kit: {
     adapter: adapter({
-      pages: 'build',
-      assets: 'build',
+      pages: 'dist',
+      assets: 'dist',
       fallback: 'index.html', // Configura el fallback
       precompress: false,
       strict: true
