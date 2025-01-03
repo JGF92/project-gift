@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import { preprocess } from 'svelte-preprocess';
 
 const dev = process.argv.includes('dev');
 
@@ -15,5 +15,5 @@ export default {
       base: dev ? '' : '/project-gift' // Reemplaza 'mi-proyecto-svelte' con el nombre de tu repositorio
     }
   },
-  preprocess: vitePreprocess()
+  preprocess: preprocess()
 };
